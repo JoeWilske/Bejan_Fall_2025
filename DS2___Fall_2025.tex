@@ -57,7 +57,7 @@
         \begin{itemize}
             \item Ratio of the \textit{proportional} change in $f(x)$ to the \textit{proportional} change in $x$.
             \item Interpretation: ``If $x$ increases by 1\%, then $f(x)$ increases by $\varepsilon$\%."
-            \item \[\varepsilon = \frac{\Big(\frac{f(x_2) - f(x_1)}{midpoint(f(x_1), f(x_2))}\Big)}{\Big(\frac{x_2 - x_1}{midpoint(x_1, x_2)}\Big)}\]
+            \item \[\varepsilon = \frac{\Big(\frac{f(x_2) - f(x_1)}{\textcolor{darkred}{midpoint(f(x_1), f(x_2))}}\Big)}{\Big(\frac{x_2 - x_1}{\textcolor{darkred}{midpoint(x_1, x_2)}}\Big)}\]
         \end{itemize}
     \end{enumerate}
 \end{frame}
@@ -72,8 +72,18 @@
     \end{figure}
     \begin{itemize}
         \item Slopes: $\quad m_{OJ} = -200, \quad m_{HC} = -0.2$
-        \item Elasticities: $\quad \varepsilon_{OJ} = -2.5, \quad \varepsilon_{HC} = -2.5$
+        \item Elasticities: $\quad \varepsilon_{OJ} = 2.5, \quad \varepsilon_{HC} = 2.5$
         \item How do we interpret these numbers? (``If $P$ increases by 1, then...")
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{More interpretation}
+    \begin{itemize}
+    \item If demand is elastic ($\varepsilon > 1$), then a change in $P$ causes a proportionately \textbf{large} change in $Q$.
+    \vspace{5}
+    \item If demand is inelastic ($\varepsilon < 1$), then a change in $P$ causes a proportionately \textbf{small} change in $Q$.
+    \vspace{5}
+    \item If demand is unit-elastic ($\varepsilon = 1$), then a change in $P$ causes a proportionately \textbf{equal} change in $Q$.
     \end{itemize}
 \end{frame}
 
@@ -82,7 +92,8 @@
     \begin{enumerate}
         \item Using the midpoint formula, calculate the price elasticity of demand for coffee between \$5 and \$3. Is the demand elastic, inelastic, or unit elastic?
         \item What will happen to the total revenue of Hillside Cafe? Please answer by calculating the change in total revenue and explain why.
-        \item In which direction do you expect the total revenue will change if Hillside Cafe cuts the price during the final week? Why? 
+        \item In which direction do you expect the total revenue will change if Hillside Cafe cuts the price during the final week? Why?
+        \item \textit{Bonus:} What is the elasticity of demand at the revenue-maximizing price?
     \end{enumerate}
     \vspace{1.5in}
 \end{frame}
@@ -91,11 +102,14 @@
     Solution: 
     \begin{enumerate}
         \item $\frac{4}{3}$. Elastic.  
-        \item Total revenue changes from \$1000 to \$1200. The revenue increases because the seller lowers the price when the demand is elastic. 
-        \item Total revenue will decrease as the seller lowers the price when the demand is inelastic. 
+        \item Total revenue changes from \$1000 to \$1200. Lowering the price will increase revenue if demand is relatively elastic. 
+        \item Total revenue will decrease as the seller lowers the price when the demand is inelastic.
+        \item \textit{Bonus:} Revenue is maximized when $\varepsilon = 1$! \\
+        If $\varepsilon < 1$, the seller can increase revenue by increasing the price, which increases $\varepsilon$.\\
+        If $\varepsilon > 1$, the seller can increase revenue by decreasing the price, which decreases $\varepsilon$.\\
+        Thus, revenue is maximized when $\varepsilon = 1$.
     \end{enumerate}
 \end{frame}
-
 
 \begin{frame}{Exercise 2: Price Elasticity of Supply}
     Suppose Anirudh and Jae work at Hillside Cafe with an hourly wage of \$15. Both of them work 4 hours per day. Now the manager wants to extend the operating hours and announces to increase the wage to \$20. Anirudh is willing to work 6 hours with the new wage offered, but Jae only wants to work 5 hours. 
