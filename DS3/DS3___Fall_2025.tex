@@ -1,0 +1,196 @@
+\documentclass[9pt, handout]{beamer}
+\usetheme{CambridgeUS}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{comment}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshortsubtitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+      \usebeamertemplate{page number in head/foot}\hspace*{2ex}
+    \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\title{Principles of Economics}
+\subtitle{Discussion Session 3: Government Intervention}
+\author{Joe Wilske and Yuzhi Yao}
+\institute{Boston College}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Price Controls}
+    \begin{itemize}
+        \item \textbf{Price ceiling:} illegal to sell above the specified price.
+        \begin{itemize}
+            \item Rent controls, anti price-gouging laws
+            \item Creates a gap in quantity demanded and quantity supplied (shortage): $\: Q^D > Q^S$.
+            \vspace{5pt}
+        \end{itemize}
+        \item \textbf{Price floor:} illegal to sell below the specified price.
+        \begin{itemize}
+            \item Minimum wage
+            \item Also creates a gap in quantity demanded and supplied (surplus): $\: Q^D < Q^S$.
+        \end{itemize}
+        \vspace{5pt}
+        \item If the original equilibrium is already in compliance with the price control, then we say the price control is \textbf{non-binding} -- it has no effect.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 1: Price Controls}
+    Consider the orange juice market: 
+    \begin{itemize}
+        \item[-] Demand: $Q^D = 50 - P$
+        \item[-] Supply: $Q^S = 4P$
+    \end{itemize}
+    \begin{enumerate}
+        \item Without government intervention, what are the equilibrium price and quantity? 
+        \item Suppose now the government imposes rent controls (a price ceiling) of \$8 to this market. Will there be a shortage or surplus? Calculate the shortage/surplus if it exists. 
+        \item Suppose the price ceiling is \$12. Will there be a shortage or surplus? Calculate the shortage/surplus if it exists. 
+    \end{enumerate}
+    \vspace{1in}
+\end{frame}
+
+\begin{frame}{Exercise 1: Price Controls}
+    Solution: 
+    \begin{enumerate}
+        \item In equilibrium, quantity demanded equals quantity supplied at the equilibrium price: $Q^D(P)=Q^S(P)$. This gives us: 
+        \begin{align*}
+            & 50 - P = 4P \\
+            & Q = 40, P = 10
+        \end{align*}
+        \item Under the price ceiling, $Q^D = 50 - 8 =42$, $Q^S=4\times 8 = 32$. Since the quantity demanded is larger than the quantity supplied, we have a shortage of $42-32=10$. 
+        \item No shortage or surplus since the price ceiling is not binding. 
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Taxes}
+    \begin{itemize}
+        \item Creates a gap between the price paid by the buyer $P^D$, and the price received by the seller $P^S$.
+        \item Suppose the government imposes a tax of size $t$ on buyers.\\
+        $\implies \text{Condition 1:} \quad P^D = P^S + t$
+        \item To find new equilibrium, we set
+        \begin{align*}
+            Q^D(P^D) &= Q^S(P^S)\\
+            Q^D(P^S + t) &= Q^S(P^S)
+        \end{align*}
+        \item Suppose the government instead imposes a tax of size $t$ on sellers.\\
+        $\implies \text{Condition 2:} \quad P^S = P^D - t$
+        \item But this is equivalent to Condition 1!  So we can find the new equilibrium using the same setup:
+        \begin{align*}
+            Q^D(P^D) &= Q^S(P^S)\\
+            Q^D(P^S + t) &= Q^S(P^S)
+        \end{align*}
+    \end{itemize}
+    \textbf{Punchline:} The resulting equilibrium prices and quantity are the same whether the tax is imposed on buyers or sellers.
+\end{frame}
+
+\begin{frame}{Exercise 2: Tax}
+Consider the yogurt market: 
+\begin{itemize}
+    \item[-] Demand: $Q^D = 400 - 10P$
+    \item[-] Supply: $Q^S = 30P - 800$
+\end{itemize}
+\begin{enumerate}
+    \item Without government intervention, what are the equilibrium price and quantity?
+    \item Suppose now the government imposes a tax of \$4 per unit to the buyers. What are the new equilibrium prices and quantity?
+    \item How is the tax split between buyers and sellers? What role does elasticity play in this?
+\end{enumerate}
+\vspace{1in}
+\end{frame}
+
+\begin{frame}{Exercise 2: Tax}
+    Solution: 
+    \begin{enumerate}
+        \item In equilibrium, quantity demanded equals quantity supplied at the equilibrium price: $Q^D(P)=Q^S(P)$. This gives us: 
+        \begin{align*}
+            & 400 - 10P = 30P - 800 \\
+            & Q = 100, P = 30
+        \end{align*}
+        \item The price paid by buyers is $P^D = P^S + 4$, and the price received by sellers is $P^S$. In equilibrium, quantity demanded at the price paid by buyers equals to quantity supplied at the price received by sellers. This gives us: 
+        \begin{align*}
+            Q^D(P^D) &= Q^S(P^S)\\
+            Q^D(P^S + 4) &= Q^S(P^S)\\
+            400 - 10(P^S + 4) &= 30P^S - 800 \\
+            P^S = 29,\:P^D &= 33, \: Q = 70
+        \end{align*}
+        \item Compared to the market without tax, the price paid by buyers increases from \$30 to \$33, so the tax shared by buyers is \$3. Similarly, the price received by sellers decreases from \$30 to \$29, and the tax shared by sellers is \$1.  The agent with the more elastic (flatter) curve will pay less of the tax.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Subsidies}
+    \begin{itemize}
+        \item The opposite of a tax: for every unit sold, the government \textit{contributes} money rather than takes it.
+        \vspace{5pt}
+        \item Consider a subsidy to buyers of size $\sigma$.\\
+        $\implies \text{Condition 3:} \quad P^D = P^S - \sigma$
+        \item Likewise, a subsidy to sellers of size $\sigma$.\\
+        $\implies \text{Condition 4:} \quad P^S = P^D + \sigma$.
+        \vspace{5pt}
+        \item As before, the two conditions are equivalent, so \textbf{the resulting prices and quantity are the same either way}.
+        \item To solve, set
+        \begin{align*}
+            Q^D(P^D) &= Q^S(P^S)\\
+            Q^D(P^S - \sigma) &= Q^S(P^S)
+        \end{align*}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 3: Subsidy}
+
+    Consider the market for corn:
+    \begin{itemize}
+        \item $Q^D = 152 - 7P$
+        \item $Q^S = P - 8$
+    \end{itemize}
+    \vspace{10pt}
+    \begin{enumerate}
+        \item What are the original equilibrium price and quantity?
+        \item Suppose the government offers a subsidy of \$8 per unit to the sellers. What are the new equilibrium prices and quantity?
+        \item How are the benefits of the subsidy split between buyers and sellers?  What role does elasticity play here?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 3: Subsidy}
+    Solution:
+    \begin{enumerate}
+        \item In equilibrium, 
+        \begin{align*}
+            Q^D(P) &= Q^S(P)\\
+            152 - 7P &= P - 8\\
+            P = 20&, \: Q = 12
+        \end{align*}
+        \item With a subsidy $\sigma = 8$ to sellers, we know $P^S = P^D + 8$. So set
+        \begin{align*}
+            Q^D(P^D) &= Q^S(P^S)\\
+            Q^D(P^D) &= Q^S(P^D + 8)\\
+            152 - 7P^D &= (P^D + 8) - 8\\
+            P^D = 19, \: P^S &= 27, \: Q = 19
+        \end{align*}
+        \item Compared the the original equilibrium, consumers pay \$1 less, and sellers receive \$7 more.  The agent with the more elastic (flatter) curve will receive less of the subsidy.
+    \end{enumerate}
+\end{frame}
+
+\end{document}
