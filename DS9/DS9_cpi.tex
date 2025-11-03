@@ -1,0 +1,220 @@
+\documentclass[9pt]{beamer}
+\usetheme{CambridgeUS}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshortsubtitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+      \usebeamertemplate{page number in head/foot}\hspace*{2ex}
+    \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\title{Principles of Economics}
+\subtitle{Discussion Session 9: The Consumer Price Index}
+\author{Joe Wilske and Yuzhi Yao}
+\institute{Boston College}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{GDP Deflator vs CPI}
+    \begin{itemize}
+        \item Prices tend to increase from year-to-year due to inflation.
+        \vspace{7pt}
+        \item The \textbf{GDP deflator} helps to account for inflation in GDP comparisons.
+        \vspace{7pt}
+        \item The \textbf{Consumer Price Index} (CPI) helps to account for inflation in cost-of-living comparisons.
+        \vspace{7pt}
+        \item[$\implies$] GDP includes everything produced in the US in a year, but 
+        \item[$\implies$] CPI includes everything US consumers buy in a year.
+        \vspace{25pt}
+        \item If the price of a Honda Civic increases, it affects $\underline{\hspace{1cm}}$, but not $\underline{\hspace{1cm}}$.
+        \vspace{7pt}
+        \item If Caterpillar sells more excavators, if affects $\underline{\hspace{1cm}}$, but not $\underline{\hspace{1cm}}$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Calculation of the CPI}
+    \begin{itemize}
+        \item As with GDP deflator, choose a base year and set to 100.
+        \vspace{7pt}
+        \item Unlike GDP deflator, select a ``basket of goods" to represent the typical consumer.
+        \vspace{4pt}
+        \begin{itemize}
+            \item This will stay constant year-to-year.
+        \end{itemize}
+        \vspace{7pt}
+        \item Set up ratios comparing the costs of the basket and the CPIs:
+    \end{itemize}
+    \vspace{10pt}
+    \begin{equation*}
+        \frac{\text{Cost base year}}{\text{Cost new year}} = \frac{\text{CPI base year}}{\text{CPI new year}}
+    \end{equation*}
+    Or equivalently,
+    \begin{equation*}
+        \frac{\text{Cost base year}}{\text{CPI base year}} = \frac{\text{Cost new year}}{\text{CPI new year}}
+    \end{equation*}
+    \vspace{5pt}
+    \begin{itemize}
+        \item From there, we can solve for `\textit{CPI new year}' or `\textit{Cost new year}'
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 1: CPI \& Inflation Rate}
+   The following table lists the prices of eggs and butter for the months of September, October, and November. Assume that the typical consumer buys 60 eggs and 4 sticks butter each month, and that September is the base period.
+    \input{tb1}
+    \begin{enumerate}
+        \item What is the consumer price index for October?
+        \item What is the inflation rate for November? 
+    \end{enumerate}
+    \vspace{1in}
+\end{frame}
+
+\begin{frame}{Exercise 1: CPI \& Inflation Rate}
+    Solution: 
+    \begin{enumerate}
+        \item \[\frac{\text{Cost September}}{\text{Cost October}} = \frac{\text{CPI September}}{\text{CPI October}}\]
+        \vspace{5pt}
+        \[\frac{134}{224.08} = \frac{100}{\text{CPI October}}\]
+        \vspace{5pt}
+        \[\text{CPI October} \: = \: \frac{224.08}{134} \times 100 \: \approx \: 167\]
+        \vspace{7pt}
+        \item Find that CPI November $\approx$ 183 in the same way, so
+        \vspace{4pt}
+        \[\text{Inflation Rate November} \: = \: \frac{183 - 167}{167} \times 100\% \: \approx \: 9.5\%\]
+    \end{enumerate}
+\end{frame}
+
+% \begin{frame}{Exercise 2: CPI vs GDP}
+%     Consider the following scenarios: 
+%     \begin{itemize}
+%         \item[-] The export price of soybeans produced in the US increases;
+%         \item[-] The price of textile products, imported from China and bought by US consumers, increases.
+%     \end{itemize}
+%     What is each scenario's direct impact on the US' GDP and CPI? 
+%     \vspace{1in}
+% \end{frame}
+
+% \begin{frame}{Exercise 2: CPI vs GDP}
+%     Solution:
+%     \begin{itemize}
+%         \item[-] Scenario 1: GDP increases, CPI no change 
+%         \item[-] Scenario 2: CPI increases, GDP no change
+%     \end{itemize}
+% \end{frame}
+
+\begin{frame}{Exercise 2: Price Index}
+    Sue Brown was an economist in 1970 and earned \$17,000 that year. Her son, Charlie Brown, is an economist today (economics is hereditary?), and he earned \$210,000 in the current year. Suppose the price index was 17.6 in 1970 and 218.4 in the current year.
+    \vspace{5pt}
+    \begin{enumerate}
+        \item What is Sue Brown's 1970 income as converted to current-year dollars?
+        \vspace{3pt}
+        \item Which economist is wealthier?
+    \end{enumerate}
+    \vspace{2in}
+\end{frame}
+
+\begin{frame}{Exercise 2: Price Index}
+    Solution:
+    \begin{enumerate}
+    \item
+    \[
+    \frac{\text{Income } 1970}{\text{Income Today}} = \frac{\text{CPI } 1970}{\text{CPI Today}}
+    \] \vspace{5pt} \[
+    \frac{17,000}{\text{Income Today}} = \frac{17.6}{218.4}
+    \] \vspace{5pt} \[
+    \text{Income Today} \: = \: \frac{218.4}{17.6} \times 17,000 \: \approx \: 210,955
+    \]
+    \vspace{7pt}
+    \item Sue Brown was wealthier.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Inflation and Interest}
+    \begin{itemize}
+        \item Interest-paying assets provide year-to-year payments on some principle.
+        \vspace{5pt}
+        \begin{itemize}
+            \item A 1-year \$100 US Treasury Bond paid 0.4\% interest in 2022.
+            \vspace{5pt}
+            \item[$\implies$] A buyer receives \$100.40 at end of year.
+        \end{itemize}
+        \vspace{5pt}
+        \item Inflation causes year-to-year devaluation of currency.
+        \vspace{5pt}
+        \begin{itemize}
+            \item Inflation was 6.5\% in 2022.
+            \vspace{5pt}
+            \item[$\implies$] The value of a 2022 bond changed by $0.4\% - 6.5\% = -6.1\%$ by the end of the year!
+        \end{itemize}
+    \end{itemize}
+    \vspace{20pt}
+    \begin{itemize}
+        \item \textbf{Nominal Interest Rate:} The advertised interest rate on the asset.
+        \vspace{5pt}
+        \item \textbf{Real Interest Rate:} The interest rate after accounting for inflation:
+        \vspace{5pt}
+        \[\text{Real} = \text{Nominal} - \text{Inflation}\]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 3: Inflation Rate \& Real Interest Rate}
+    The following table shows real and nominal interest rates for three consecutive years:
+    \input{tb2}
+    Supose 2017 is the base year.
+    \vspace{5pt}
+    \begin{enumerate}
+        \item What was the inflation rate in 2018?
+        \vspace{5pt}
+        \item What was the CPI in 2018?
+    \end{enumerate}    
+\end{frame}
+
+\begin{frame}{Exercise 3: Inflation Rate \& Real Interest Rate}
+    Solution:
+    \begin{enumerate}
+        \item \[
+        \text{Real 2018} = \text{Nominal 2018} - \text{Inflation 2018}
+        \] \[
+        1.5\% = 2.5\% - \text{Inflation 2018}
+        \] \[
+        \text{Inflation 2018} = 1\%
+        \]
+        \item \[
+        \text{Inflation 2018} = \frac{\text{CPI 2018} - \text{CPI 2017}}{\text{CPI 2017}} \times 100\%
+        \] \vspace{5pt} \[
+        1\% = \frac{\text{CPI 2018} - 100}{100} \times 100\%
+        \] \vspace{5pt} \[
+        \text{CPI 2018} \: = \: 101
+        \]
+    \end{enumerate}
+\end{frame}
+
+\end{document}
