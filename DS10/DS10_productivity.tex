@@ -1,0 +1,234 @@
+\documentclass[9pt]{beamer}
+\usetheme{CambridgeUS}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshortsubtitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+      \usebeamertemplate{page number in head/foot}\hspace*{2ex}
+    \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\title{Principles of Economics}
+\subtitle{Discussion Session 10: Productivity}
+\author{Joe Wilske}
+\institute{Boston College}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{The Production Function}
+    \begin{itemize}
+        \item A model of the macroeconomy requires a \textbf{production function}.
+        \vspace{3pt}
+        \begin{itemize}
+            \item Model of how different inputs $(A, L, K, H, N)$ interact to create output $Y$.
+        \end{itemize}
+        \vspace{3pt}
+        \item Generally, 
+        \begin{equation*}
+            Y = A \times F(L, K, H, N)
+        \end{equation*}
+        where \begin{itemize}
+            \item $A$ := technology
+            \item $L$ := labor
+            \item $K$ := capital
+            \item $H$ := human capital 
+            \item $N$ := natural resources
+        \end{itemize}
+        \vspace{3pt}
+        \item A commonly used basic production function is
+    \begin{equation*}
+        Y = A \, L^{\alpha} \, K^{1- \alpha}, \quad \text{where} \:\: 0< \alpha < 1
+    \end{equation*}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Diminishing Marginal Product}
+    \begin{itemize}
+        \item The production function exhibits \textbf{diminishing marginal product}:
+        \vspace{5pt}
+        \begin{itemize}
+            \item The increase in output due to increasing an input is decreasing, holding other inputs constant.
+            \vspace{5pt}
+            \item $\partial F(L, K, H, N)/\partial L > 0 \:$ and $\: \partial^2 F(L,K,H,N)/\partial L^2 < 0$
+        \end{itemize}
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\linewidth]{production_L.png}
+    \end{figure}
+    \begin{itemize}
+        \item[$\implies$] A capital-rich country gains more output from an increase in labor than does a labor-rich country.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Productivity}
+    \begin{itemize}
+        \item The ratio of capital to labor, $K/L$, is determinative of the productivity of each.
+        \vspace{10pt}
+        \item The ratio of output to labor, $Y/L$, tells us the productivity of labor.
+        \vspace{10pt}
+        \item Higher capital-to-labor ratio begets greater productivity of labor:
+        \[\uparrow \frac{K}{L} \: \implies \: \uparrow \frac{Y}{L}\]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 1: Productivity}
+Suppose
+\vspace{4pt}
+    \begin{itemize}
+        \item Country A has a labor force of 50 million people and \$10 billion of capital.
+        \vspace{4pt}
+        \item Country B has a labor force of 25 million people and \$20 billion of capital.
+    \end{itemize}
+    \vspace{10pt}
+    Question:  Assuming technology and other inputs are identical,
+    \vspace{4pt}
+    \begin{enumerate}
+        \item Which country has the higher capital-to-labor ratio?
+        \vspace{4pt}
+        \item Which country has the higher productivity of labor?
+        \vspace{4pt}
+        \item Which country's GDP ($Y$) would benefit more from an influx of labor through immigration?
+        \vspace{4pt}
+        \item Which country's GDP would benefit more from an influx of capital through foreign investment?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 1: Productivity}
+    Solution:
+    \vspace{4pt}
+    \begin{enumerate}
+        \item Country B.  $\: \: \frac{K_B}{L_B} = \frac{20 \times 10^9}{25 \times 10^6} = 800 > 200 = \frac{10 \times 10^9}{50 \times 10^6} = \frac{K_A}{L_A}$
+        \vspace{4pt}
+        \item Country B.  Higher $\frac{K}{L}$ implies higher $\frac{Y}{L}$.
+        \vspace{4pt}
+        \item Country B.  Higher productivity of labor implies greater benefit to GDP from additional labor.
+        \vspace{4pt}
+        \item Country A.  Lower $\frac{K}{L}$ implies higher productivity of capital, which implies greater benefit to GDP from additional capital.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 2: GDP per Capita}
+Suppose
+\vspace{4pt}
+    \begin{itemize}
+        \item Country A has a population of 240 million, and one quarter of its population is in the labor force.  Its GDP is \$12 trillion.
+        \vspace{4pt}
+        \item Country B has a population of 60 million, and one fifth of its population is in the labor force.  Its GDP is \$2.4 trillion.
+    \end{itemize}
+    \vspace{4pt}
+    Question:
+    \vspace{4pt}
+    \begin{enumerate}
+        \item Which country has the higher GDP per capita?
+        \vspace{4pt}
+        \item Which has the higher productivity of labor?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 2: GDP per Capita}
+    \begin{enumerate}
+        \item Country A.  \[\frac{Y_A}{\text{population A}} = \frac{12 \times 10^{12}}{240 \times 10^6} = 50,000 > 40,000 = \frac{2.4 \times 10^{12}}{60 \times 10^6} = \frac{Y_B}{\text{population B}}\]
+        \vspace{5pt}
+        \item They are equal!  \[\frac{Y_A}{L_A} = \frac{12 \times 10^{12}}{60 \times 10^6} = 200,000 = \frac{2.4 \times 10^{12}}{12 \times 10^6} = \frac{Y_B}{L_B}\]
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 3:  Very Fun Algebra Problems}
+    \begin{enumerate}
+        \item If labor productivity in the United States increases by 5\% and the labor force grows by 4\%, what is its GDP growth rate?
+        \vspace{10pt}
+        \item If the labor force falls by 8\%, by how much must labor productivity increase for GDP growth to be positive?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 3:  Very Fun Algebra Problems}
+    \begin{enumerate}
+        \item Labor productivity increase by 5\% $\implies \:$ $\frac{Y_2}{L_2}$ = $1.05 \, \frac{Y_1}{L_1}$.\\
+        \vspace{5pt}
+        Labor force increase by 4\% $\implies \:$ $L_2 = 1.04 \, L_1$.\\
+        \vspace{5pt}
+        Substitute $1.04\,L_1$ in for $L_2$ in the labor productivity growth equation and solve for $Y_2$ to find that $Y_2 = 1.092\, Y_1$.\\
+        \vspace{5pt}
+        $\implies \:$ GDP grows by 9.2\%.
+        \vspace{10pt}
+        \item Labor force falls by 8\% $\implies \:$ $L_2 = 0.92 \, L_1$.\\
+        \vspace{5pt}
+        Let $g$ represent the growth rate of labor productivity, so $\: \frac{Y_2}{L_2} = (1+g)\frac{Y_1}{L_1}$.\\
+        \vspace{5pt}
+        Substitute $0.92 \, L_1$ in for $L_2$ in the labor productivity growth equation, to get
+        \[
+        \frac{Y_2}{0.92\, L_1} = (1+g)\frac{Y_1}{L_1}
+        \]
+        Rearrange terms to find that the GDP growth rate is 
+        \[
+        \frac{Y_2 - Y_1}{Y_1} = 0.92(g+1) - 1
+        \]
+        We want to find the $g$ such that $(Y_2 - Y_1)/Y_1 > 0$, so set $0.92(g+1) - 1>0$ and solve for $g$.\\
+        \vspace{5pt}
+        $\implies$ $g > 8.7\%$
+    \end{enumerate}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
