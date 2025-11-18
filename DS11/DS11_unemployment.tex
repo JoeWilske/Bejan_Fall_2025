@@ -1,0 +1,222 @@
+\documentclass[9pt]{beamer}
+\usetheme{CambridgeUS}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshortsubtitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+      \usebeamertemplate{page number in head/foot}\hspace*{2ex}
+    \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\title{Principles of Economics}
+\subtitle{Discussion Session 11: (Un)employment}
+\author{Joe Wilske}
+\institute{Boston College}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Classifying the Population}
+    \centering
+    \includegraphics[width=1.025\linewidth]{employment_chart.png}
+\end{frame}
+
+\begin{frame}{Exercise 1: Classifying Workers}
+For each of the following scenarios, decide if the subject is 
+\begin{enumerate}[A]
+    \item Employed
+    \item Unemployed
+    \item Not in the Labor Force
+    \item Other
+\end{enumerate}
+\vspace{10pt}
+    \begin{enumerate}
+        \item Elena worked 40 hours last week as a sales manager for a beverage company.
+        \vspace{4pt}
+        \item Steve lost his job when the local aircraft manufacturing plant closed down.  Since then, he has been contacting other businesses in town trying to find a job.
+        \vspace{4pt}
+        \item Linda is a stay-at-home mother.  She neither holds a job nor looks for one.
+        \vspace{4pt}
+        \item John was fired in September and gave up looking for work in October because jobs in his area require more experience.
+        \vspace{4pt}
+        \item Timmy is 13 years old and works 15 hours a week for no pay at his parents' diner.
+        \vspace{4pt}
+        \item Cindy is 9 years old and attends elementary school.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 1: Classifying Workers}
+    Solution:
+    \begin{enumerate}
+        \item $A$, Elena is \textit{employed}.
+        \vspace{5pt}
+        \item $B$, Steve is \textit{unemployed}.
+        \vspace{5pt}
+        \item $C$, Linda is not in the \textit{labor force} and is not \textit{marginally attached}.
+        \vspace{5pt}
+        \item $C$, John is not in the \textit{labor force}.  He is \textit{marginally attached} and \textit{discouraged}.
+        \vspace{5pt}
+        \item $A$, Timmy is \textit{employed}.  He is an \textit{unpaid family worker}.
+        \vspace{5pt}
+        \item $D$, Cindy is not in the \textit{Civilian Noninstitutional Population 16 and Older} because she is under 16.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Unemployment and Labor Force Participation Rates}
+    \begin{align*}
+        \text{Unemployment Rate} \: &= \: \frac{\text{Unemployed}}{\text{Labor Force}}\\
+        \text{Labor Force Participation Rate} \: &= \: \frac{\text{Labor Force}}{\text{Civilian Noninstitutional Population 16 and Older}}
+    \end{align*}
+    \vspace{10pt}
+    \hline
+    \hline
+    \vspace{12pt}
+    \begin{itemize}
+        \item The \textbf{Unemployment rate} gives a measure of the health of the national labor market.
+        \vspace{5pt}
+        \item But when an unemployed person stops searching for jobs for 4 weeks, he is moved out of the labor force.
+        \vspace{4pt}
+        \begin{itemize}
+            \item This causes the unemployment rate to fall, even though nobody gained employment.
+        \end{itemize}
+        \vspace{5pt}
+        \item The \textbf{Labor Force Participation Rate} accounts for this by giving a measure of the size of the labor fore. 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 2: Unemployment and Labor Force Participation Rates}
+    For each of the two scenarios, find the unemployment rate and the LFP rate:
+    \vspace{5pt}
+    \begin{enumerate}
+        \item Suppose there are
+        \vspace{3pt}
+        \begin{itemize}
+            \item 3 full-time workers,
+            \item 1 part-time worker,
+            \item 2 unemployed workers,
+            \item 2 soldiers,
+            \item 1 college student, and
+            \item 2 retirees.
+        \end{itemize}
+        \vspace{5pt}
+        \item Suppose one of the unemployed workers has not looked for work in 4 weeks and becomes discouraged.  Everyone else stays where they are.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 2: Unemployment and Labor Force Participation Rates}
+    Solution:
+    \vspace{5pt}
+    \begin{itemize}
+        \item Unemployed $= 2$
+        \vspace{5pt}
+        \item Labor force $\:=\:$ 3 full time $+$ 1 part time $+$ 2 unemployed $= 6$
+        \vspace{5pt}
+        \item Civilian Noninstitutional Population 16 and Older $=$\\
+        \vspace{2pt}
+        3 full time $+$ 1 part time $+$ 2 unemployed $+$ 1 student $+$ 2 retirees $= 9$
+    \end{itemize}
+    \vspace{10pt}
+    \begin{enumerate}
+        \item UR $=$ Unemployed/LF $=$ 2/6 $=$ 33\%\\
+        \vspace{5pt}
+        LFPR $=$ LF/CNP16O $=$ 6/9 $=$ 67\%
+        \vspace{10pt}
+        \item If an unemployed worker becomes discouraged, then \textit{Unemployed} goes down by 1 and \textit{LF} goes down by 1.\\
+        \vspace{5pt}
+        UR $=$ Unemployed/LF $=$ 1/5 $=$ 20\%\\
+        \vspace{5pt}
+        LFPR $=$ LF/CNP16O $=$ 5/9 $=$ 56\%
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Types of Unemployment}
+    \begin{itemize}
+        \item \textbf{Frictional Unemployment} is the short-term unemployment due to the time-consuming process of matching workers with employers.
+        \vspace{4pt}
+        \begin{itemize}
+            \item \textit{E.g.} someone who is unemployed for a short time between college and their first job.
+            \vspace{4pt}
+            \item Always present and not indicative of an unhealthy economy.
+        \end{itemize}
+        \vspace{10pt}
+        \item \textbf{Structural Unemployment} is due to a shift in the economy that creates a difference between the skills workers have and the skills employers need.
+        \vspace{4pt}
+        \begin{itemize}
+            \item \textit{E.g.} the introduction of China to the WTO in 2001 caused US companies to shift manufacturing overseas, eliminating US manufacturing jobs.
+            \vspace{4pt}
+            \item Painful in the short-run, but typically a sign of economic or technological development.
+        \end{itemize}
+        \vspace{10pt}
+        \item \textbf{Cyclical Unemployment} is due to an economy-wide economic downturn.
+        \vspace{4pt}
+        \begin{itemize}
+            \item \textit{E.g.} the 2008 financial crisis caused a fall in nationwide aggregate demand, which forced many firms to close or lay off workers. 
+            \vspace{4pt}
+            \item In standard theory, this is just bad.  Policy-makers will do their best to avoid cyclical unemployment.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 3: Types of Unemployment}
+    For each of the following scenarios, decide if the unemployment is 
+    \begin{enumerate}[A]
+        \item Frictional
+        \item Structural
+        \item Cyclical
+    \end{enumerate}
+    \vspace{10pt}
+    \begin{enumerate}
+        \item The development of the automobile causes horseshoe makers to lose their jobs.
+        \vspace{5pt}
+        \item The Great Depression sweeps across the United States and causes mass unemployment.
+        \vspace{5pt}
+        \item Artificial intelligence is a cheaper ECON1101 TA than a human, so the PhD students lose their stipends.
+        \vspace{5pt}
+        \item George moves from Boston to Florida for the weather, and it takes him a few months to find a new job.
+        \vspace{5pt}
+        \item The legalization of online sports gambling causes a contraction of the brick-and-mortar casino industry, so casino employees lose their jobs.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 3: Types of Unemployment}
+    Solution:
+    \vspace{5pt}
+     \begin{enumerate}
+         \item $B$, structural.
+         \item $C$, cyclical.
+         \item $B$, structural.
+         \item $A$, frictional.
+         \item $B$, structural.
+     \end{enumerate}
+\end{frame}
+
+\end{document}
+
