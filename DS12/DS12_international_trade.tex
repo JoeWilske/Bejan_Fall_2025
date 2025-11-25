@@ -1,0 +1,407 @@
+\documentclass[9pt]{beamer}
+\usetheme{CambridgeUS}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\sisetup{group-separator = {,}, group-minimum-digits = 3}
+
+
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshortsubtitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+      \usebeamertemplate{page number in head/foot}\hspace*{2ex}
+    \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\title{Principles of Economics}
+\subtitle{Discussion Session 12: International Trade}
+\author{Joe Wilske}
+\institute{Boston College}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Why trade?}
+David Ricardo (1817):
+    \begin{itemize}
+        \item Suppose England and Portugal can both produce wine and cloth, but Portugal is more productive at producing both.
+        \item[$\rightarrow$] What could Portugal gain from trading with England?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Comparative Advantage}
+David Ricardo (1817):
+\begin{itemize}
+    \item Suppose this table gives the hours of labor required to produce one unit of wine and cloth in England and Portugal.
+\end{itemize}
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{lccc}
+    \hline
+    \textbf{Country} & \textbf{Cloth} & \textbf{Wine} \\
+    \hline
+    England  & 15 & 20 \\
+    Portugal & 10 & 10 \\
+    \hline
+    \end{tabular}
+    \end{table}
+\begin{itemize}
+    \item Portugal has an \textit{absolute advantage} in each:  producing both wine and cloth is less costly in Portugal than in England.
+    \vspace{5pt}
+    \pause
+    \item But England has a \textit{comparative advantage} in cloth:  the opportunity cost of producing cloth is lower in England than in Portugal.
+    \vspace{5pt}
+    \begin{itemize}
+        \item In Portugal, producing 1 unit of cloth means forgoing $\frac{10}{10} = 1$ unit of wine.
+        \vspace{3pt}
+        \item In England, producing 1 unit of cloth means forgoing $\frac{15}{20} = 0.75$ units of wine.
+    \end{itemize}
+    \vspace{3pt}
+    \pause
+    \item[$\implies$] The price of cloth relative to wine is lower in England than in Portugal.
+    \vspace{3pt}
+    \item[$\implies$] Both countries benefit from specializing in their comparative advantage and trading with each other
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Direction of Trade Flows}
+    \begin{itemize}
+        \item England has comparative advantage in cloth.
+        \item Portugal has comparative advantage in wine.
+        \vspace{10pt}
+        \pause
+        \item[$\implies$] In \textit{autarky}, the price of cloth relative to wine is lower in England than in Portugal.
+        \vspace{10pt}
+        \pause
+        \item[$\implies$] Under free trade, England will export cloth to Portugal and import wine from Portugal.
+        \pause
+        \vspace{15pt}
+        \item In general, under free trade, \textbf{each country will export its comparative advantage and import its comparative disadvantage.}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 1: Comparative Advantage}
+    \begin{itemize}
+        \item The following table gives autarky equilibrium prices for refined petroleum and automobiles in the US and Mexico (both in USD).
+    \end{itemize}
+    \vspace{5pt}
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{lccc}
+    \hline
+    \textbf{Country} & \textbf{Petroleum} & \textbf{Automobiles} \\
+    \hline
+    United States & 80 & 40,000 \\
+    Mexico & 100 & 45,000 \\
+    \hline
+    \end{tabular}
+    \end{table}
+    \vspace{5pt}
+    \begin{enumerate}
+        \item Which country has the absolute advantage in the production of automobiles?
+        \vspace{5pt}
+        \item Which country has the comparative advantage in automobiles?\\
+        \vspace{2pt}
+        \textit{Hint:} in which country is the relative price of automobiles to petroleum lower?
+        \vspace{5pt}
+        \item What will the US export and what will it import?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 1: Comparative Advantage}
+    Solution:
+    \vspace{10pt}
+    \begin{enumerate}
+        \item $\num{40000} < \num{45000}$, so the US has the absolute advantage in automobile production.
+        \vspace{5pt}
+        \item Relative price of automobiles in US $= \frac{\num{40000}}{80} = 500$.\\
+        \vspace{5pt}
+        Relative price of automobiles in Mexico $= \frac{\num{45000}}{100} = 450$.\\
+        \vspace{5pt}
+        $\implies$ Mexico has the comparative advantage in automobiles.
+        \vspace{5pt}
+        \item The US will export petroleum and import automobiles.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Gains from Trade}
+
+    \only<1>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide1.PNG}
+        \caption*{The above figure shows the autarky equilibria for the English cloth and wine markets.}
+    \end{figure}
+    }
+    \only<2>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide2.PNG}
+        \caption*{Autarky CS and PS are calculated as usual.}
+    \end{figure}
+    }
+    \only<3>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide3.PNG}
+        \caption*{Now introduce the prices for ``Rest of World".}
+    \end{figure}
+    }
+    \only<4>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide4.PNG}
+        \caption*{Suppose England abandons autarky for free trade. English buyers and sellers now use \textit{RoW} prices.}
+    \end{figure}
+    }
+    \only<5>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide5.PNG}
+        \caption*{The differences between quantities supplied and demanded by English producers and consumers are made up by exports and imports.}
+    \end{figure}
+    }
+    \only<6>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide6.PNG}
+        \caption*{\textbf{Balanced Trade:} The value of all exports equals the value of all imports.  $\implies$  If the only goods that England trades are cloth and wine, then the areas of the pink rectangles must be equal.}
+    \end{figure}
+    }
+    \only<7>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide7.PNG}
+        \caption*{CS is the difference between the demand curve and the \textit{RoW} price.\\
+        PS is the difference between the \textit{RoW} price and the supply curve.}
+    \end{figure}
+    }
+    \only<8>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide8.PNG}
+        \caption*{To recap, this is CS and PS under autarky.}
+    \end{figure}
+    }
+    \only<9>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide7.PNG}
+        \caption*{Free trade increases PS and reduces CS for the country's comparative advantage good.\\
+        Free trade reduces PS and increases CS for the country's comparative disadvantage good.}
+    \end{figure}
+    }
+    \only<10>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide9.PNG}
+        \caption*{The addition of the dark triangles guarantees that the gains to the winners are greater than the losses to the losers.}
+    \end{figure}
+    }
+\end{frame}
+
+\begin{frame}{Exercise 2: Gains from Trade}
+Consider the market for automobiles in the US under autarky:
+    \begin{itemize}
+        \item $Q^S = P - \num{20000}$
+        \item $Q^D = -\frac{1}{2}P + \num{40000}$
+    \end{itemize}
+    \vspace{10pt}
+    \begin{enumerate}
+        \item What are the autarky equilibrium price and quantity?
+        \item What are CS and PS?
+    \end{enumerate}
+    \vspace{10pt}
+    Now suppose the \textit{Rest of World} price is $\$\num{30000}$ and the US adopts free trade. \\ Assume for the sake of simplicity that the US is a `small country'.
+    \vspace{10pt}
+    \begin{enumerate}
+        \setcounter{enumi}{2}
+        \item Does the US have a comparative advantage in automobiles?
+        \item What are the new quantities supplied and demanded?
+        \item How many cars does the US import or export?
+        \item What is the change in CS and PS from the autarky equilibrium??
+        \item What is the change in total surplus?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 2: Gains from Trade}
+    Solution:
+    \begin{enumerate}
+        \item $P^{\text{A}} = \num{40000} \: \text{ and } \: Q^{\text{A}} = \num{20000}$.
+        \item $CS^A = \frac{1}{2} \times \num{20000} \times \num{40000} = \num{400000000} \: \text{ and }$ \\ \vspace{1pt} $PS^A = \frac{1}{2} \times \num{20000} \times \num{20000} = \num{200000000}$.
+        \item No.  The \textit{RoW} price is lower than the US autarky price.
+        \item $Q^S = (\num{30000}) - \num{20000} = \num{10000} \: \text{ and } \: Q^D = -\frac{1}{2}(\num{30000}) + \num{40000} = \num{25000}$.
+        \item The US imports $Q^D - Q^S = \num{15000}$ automobiles.
+        \item $CS^{FT} = \frac{1}{2} \times \num{25000} \times \num{50000} = \num{625000000} \: \text{ and }$ \\ \vspace{1pt} $PS^{FT} = \frac{1}{2} \times \num{10000} \times \num{10000} = \num{50000000}$.\\
+        \vspace{1pt} $\implies \:$ $CS$ increases by \$225 million and $PS$ decreases by \$150 million.
+        \item Total surplus increases by \$75 million.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Protectionism}
+    \begin{itemize}
+        \item We've seen that free trade creates winners and losers.
+        \vspace{2pt}
+        \begin{itemize}
+            \item The losses to the losers are smaller than the gains to the winners.
+            \vspace{3pt}
+            \item Free trade is beneficial on net.
+        \end{itemize}
+        \vspace{4pt}
+        \item If the losers are organized, they may lobby for \textbf{protectionism}: governmental policies that restrict trade in order to benefit certain groups.
+        \vspace{4pt}
+        \item The previous problem concerned automobile manufacturing:
+        \vspace{2pt}
+        \begin{itemize}
+            \item Consumers benefit from free trade, but organization of US car-buyers is difficult.
+            \vspace{3pt}
+            \item American auto manufacturers and labor suffer from free trade; organization is easy.\\
+            \vspace{3pt}
+            $\implies \:$ Those organized groups lobby for protectionist policies.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Protectionism 2}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.59\linewidth]{uaw_lobbying.png}
+        \caption{From UAW.org}
+        \label{fig:placeholder}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Tariffs}
+    \begin{itemize}
+        \item The most common protectionist policy is a \textbf{tariff}: a tax on imported goods.
+        \vspace{3pt}
+        \item The effect of a tariff is much the same as a tax: \\ 
+        \vspace{1pt}
+        it raises the price to the buyers and decreases the quantity sold.
+        \vspace{3pt}
+        \item Tariffs effectively push us back toward the autarky equilibrium, reversing both the harmful and beneficial effects of free trade.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Tariffs Graphically}
+    \only<1>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide10.PNG}
+        \caption*{Consider the autarky equilibrium for automobiles in the US, with \textit{Rest of World} price $P^{RoW}$.}
+    \end{figure}
+    }
+    \only<2>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide11.PNG}
+        \caption*{Under free trade, Americans use $P^{RoW}$, so $CS$ expands and $PS$ contracts.}
+    \end{figure}
+    }
+    \only<3>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide12.PNG}
+        \caption*{Suppose the government introduces a tariff, which raises the domestic price to $P^T \in (P^{RoW}, P^A)$.}
+    \end{figure}
+    }
+    \only<4>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide13.PNG}
+        \caption*{The higher price causes $Q_S$ and $Q_D$ to move inward toward the autarky quantity $Q^A$.}
+    \end{figure}
+    }
+    \only<5>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide14.PNG}
+        \caption*{After the tariff, the surplus triangles are formed by $P^T$, $Q_S^T$, and $Q_D^T$.}
+    \end{figure}
+    }
+    \only<6>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide15.PNG}
+        \caption*{Recall: this is the free trade surplus.}
+    \end{figure}
+    }
+    \only<7>{
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Slide16.PNG}
+        \caption*{The tariff causes $PS$ to increase and $CS$ to decrease.\\
+        \vspace{1pt}
+        Some of the lost $CS$ is converted to tax revenue, and the rest is deadweight loss.}
+    \end{figure}
+    }
+\end{frame}
+
+\begin{frame}{Exercise 3: Tariffs}
+    Consider the same hypothetical US auto market as Exercise 2:
+    \begin{itemize}
+        \item $Q^S = P - \num{20000}$
+        \item $Q^D = -\frac{1}{2}P + \num{40000}$
+        \item $P^{RoW} = \num{30000}, \: Q_S^{FT} = \num{10000}, \: Q_D^{FT} = \num{25000}$.
+        \item $CS^{FT} = \$625$ million
+        \item $PS^{FT} = \$50$ million
+    \end{itemize}
+    \vspace{10pt}
+    Suppose the government imposes a tariff which raises the price to $P^T = \num{35000}$.
+    \vspace{4pt}
+    \begin{enumerate}
+        \item Calculate $CS^T$ and $PS^T$.
+        \item Calculate tax revenue.
+        \item Calculate deadweight loss.
+        \item By how much does total surplus (including tax revenue) change from the free trade equilibrium?
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Exercise 3: Tariffs}
+Solution:
+    \begin{enumerate}
+        \item $CS^T = \frac{1}{2} \times \num{23000} \times \num{46000} = \num{529000000}$.\\
+        \vspace{1pt}
+        $PS^T = \frac{1}{2} \times \num{14000} \times \num{14000} = \num{98000000}$.
+        \vspace{2pt}
+        \item $TR = (\num{23000} - \num{14000})\times(\num{34000} - \num{30000}) = \num{36000000}$.
+        \vspace{2pt}
+        \item $DWL = \big(\frac{1}{2}\times \num{4000} \times \num{4000} \big) + \big( \frac{1}{2} \times \num{2000} \times \num{4000} \big) = \num{12000000}$
+        \vspace{2pt}
+        \item $\Delta TS = 663 \text{ million} - 675 \text{ million} = -12 \text{ million}$.  (Note that this is equal to DWL).
+    \end{enumerate}
+\end{frame}
+
+
+
+
+
+\end{document}
+
